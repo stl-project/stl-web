@@ -1,0 +1,14 @@
+body {
+  background-color: white;
+  color: #bbb;
+  margin: 0;
+  height: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, sans-serif;
+}
+
+.disabled {
+    pointer-event: none;
+}
