@@ -4,23 +4,25 @@ layout: default
 ---
 <div class="row text-center">
   <div class="offset-3 col-6 text-center">
-    <img class="img-fluid z-3 position: absolute !important;" src="/f/logo.svg"/>
+    <img class="img-fluid" src="/f/logo.svg"/>
   </div>
 </div>
 
 # Spread the Love
 
-Send some love to someone you do not know. Press the button and send a random
-person somewhere an SMS with a positive and loving message.
+Send a loving message to someone you do not know.
 
-Feel good in making others feel good.
+Press the button and send a random person, somewhere in the world, an SMS with a positive and loving message.
+
+Making others feel good can make you feel good 🤗
+
 <div class="row mt-4 pt-4">
 <div class="col">
-<a href="#" type="button" onclick="doIt(this); return false;" class="btn btn-success btn-lg">Spread the Love</a>
+<a href="#" type="button" onclick="doIt(this); return false;" class="btn btn-outline-success btn-lg rounded shadow">Spread the <img style="height: 25px;" src="/f/logo-no-bg.svg"/></a>
 </div>
 </div>
 
-<div id="map-overlay" class="z-2 container justify-content-center " style="position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%; background-color: #d5dfffee; display: none;">
+<div id="map-overlay" class="z-2 container justify-content-center " style="position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%; background-color: #d5dfffee; display: none; ">
 
 <div class="row text-center">
   <div class="offset-3 col-6 text-center">
@@ -29,6 +31,13 @@ Feel good in making others feel good.
 </div>
 
   <div id="world-map" class="img-fluid pt-2" style="position: absolute; top: 40%; left: 0; width: 100%; background-color: #d5dfffcc;">
+
+    <div class="row mt-2">
+  <div class="col text-center" style="font-size: 65%;">
+    Randomly selecting SMS destination: <span id="dest-country"><img style="height: 12px;" class="img-fluid" src="/f/loader.svg"/></span>
+  </div>
+    </div>
+
   <svg baseprofile="tiny" fill="#ececec" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".2" version="1.2" viewbox="0 0 2000 857"  xmlns="http://www.w3.org/2000/svg">
 
 <!--
