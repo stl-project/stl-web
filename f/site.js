@@ -182,7 +182,7 @@ var nearlyAllCountries = {
   "UnitedStates": "United States"
 };
 
-var mobileFriendlyCountries = ["AE","AF","Angola","Argentina","AT","Australia","Azerbaijan","BF","BG","BM","BN","BO","BR","BW","BY","Canada","CD","CF","CG","Chile","China","CI","CM","CO","CZ","DE","Denmark","DZ","EC","EG","ER","ES","ET","FI","France","GA","GE","GH","GL","GN","Greece","HR","HU","IN","Indonesia","IQ","IR","IS","Italy","Japan","JO","KE","KG","KH","KP","KR","KZ","LA","LK","LR","LS","LT","LV","LY","MA","Malaysia","MF","MG","MH","MK","ML","MM","MN","MR","MS","MV","MW","MX","MZ","NA","NE","NewZealand","NG","Norway","NP","Oman","PapuaNewGuinea","PE","Philippines","PK","PL","PT","PY","RO","RS","RussianFederation","SA","SD","SE","SK","SN","SO","SS","SX","SY","SZ","TD","TH","TJ","TL","TM","TN","Tonga","Turkey","TV","TZ","UA","UG","UnitedKingdom","UnitedStates","UY","UZ","VE","VN","YE","ZA","ZM","ZW"];
+var mobileFriendlyCountries = ["AE","AF","Angola","Argentina","AT","Australia","Azerbaijan","BF","BG","BM","BN","BO","BR","BW","BY","Canada","CD","CF","CG","Chile","China","CI","CM","CO","CZ","DE","Denmark","DZ","EC","EG","ER","ES","ET","FI","France","GA","GE","GH","GL","GN","Greece","HR","HU","IN","Indonesia","IQ","IR","IS","Italy","Japan","JO","KE","KG","KH","KP","KR","KZ","LA","LK","LR","LT","LV","LY","MA","Malaysia","MF","MG","MH","MK","ML","MM","MN","MR","MS","MV","MW","MX","MZ","NA","NE","NewZealand","NG","Norway","NP","Oman","PapuaNewGuinea","PE","Philippines","PK","PL","PT","PY","RO","RS","RussianFederation","SA","SD","SE","SK","SN","SO","SS","SX","SY","SZ","TD","TH","TJ","TL","TM","TN","Tonga","Turkey","TV","TZ","UA","UG","UnitedKingdom","UnitedStates","UY","UZ","VE","VN","YE","ZA","ZM","ZW"];
 
 var hiCountry = undefined
 
@@ -207,20 +207,6 @@ function doCountryHighlight(cnt,cb) {
   }
 }
 
-function doPulsingHeart(cnt,cb) {
-  if ( cnt == 0 ) {
-    cb()
-  } else {
-    if ( $('#pulsing-heart').height() == 25 ) {
-      $('#pulsing-heart').height(30)
-    } else {
-      $('#pulsing-heart').height(25)
-    }
-    setTimeout( () => { doPulsingHeart(cnt-1,cb) }, 200);
-  }
-}
-
-
 function doIt(elem) {
   $(elem).html("<img src='/f/loader.svg'/>");
   $(elem).removeAttr('href');
@@ -231,7 +217,7 @@ function doIt(elem) {
   $('#world-map svg').find('path').css({'fill': origFill });
 
   $('#map-overlay').fadeIn(300, () => {
-    doCountryHighlight(30, () => {
+    doCountryHighlight(20, () => {
 
       $('#dest-country').fadeOut( 200, () => {
         if ( hiCountry in nearlyAllCountries ) {

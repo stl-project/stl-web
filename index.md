@@ -1,7 +1,9 @@
 ---
 permalink: /
+title: Spread the Love
 layout: default
 ---
+
 <div class="row text-center">
   <div class="offset-3 col-6 text-center">
     <img class="img-fluid" src="/f/logo.svg"/>
@@ -16,11 +18,14 @@ Press the button and send a random person, somewhere in the world, an SMS with a
 
 Making others feel good can make you feel good 🤗
 
-<div class="row mt-4 pt-4">
+<div class="row mt-4 pt-4 mb-4 pb-4">
 <div class="col">
 <a href="#" type="button" onclick="doIt(this); return false;" class="btn btn-outline-success btn-lg rounded shadow">Spread the <img style="height: 25px;" src="/f/logo-no-bg.svg"/></a>
 </div>
 </div>
+
+[FAQs](/faqs).
+
 
 <div id="map-overlay" class="z-2 container justify-content-center " style="position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%; background-color: #d5dfffee; display: none; ">
 

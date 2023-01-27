@@ -37,14 +37,19 @@
     <script src="/f/bs/js/bootstrap.min.js?cb={{ "now" | date: "%s" }}"></script>
     <script src="/f/jquery.3.5.1.js?cb={{ "now" | date: "%s" }}"></script>
     <script src="/f/site.js?cb={{ "now" | date: "%s" }}"></script>
+    <style>
+      a {
+      text-decoration: none;
+      }
+    </style>
   </head>
 
   <body>
     <div id="root">
-      <div class="quattro container text-center mt-4 pt-4">
+      <div class="quattro container mt-4 pt-4">
 
-        <div class="row text-center fs-5">
-          <div class="offset-1 col-10 offset-sm-1 col-sm-10 col-xs-12 text-center">
+        <div class="row fs-5">
+          <div class="offset-1 col-10 offset-sm-1 col-sm-10 col-xs-12 mb-5">
             {{ content }}
           </div>
         </div>
