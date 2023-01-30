@@ -1,10 +1,10 @@
 ---
 permalink: /faqs
-title: STL - FAQs
+title: Spread.the.Love - FAQs
 layout: faq
 ---
 
-## FAQs - Spread the Love
+## FAQs Spread the Love
 <hr/>
 
 [*Angry people click more*](https://en.wikipedia.org/wiki/Rage_farming) has become the motto of social media conglomerates. Social media has become a machinary producing angry people: the more anger, the more clicks, the more advertising sold, until it all spirals out-of-control.
@@ -12,6 +12,12 @@ layout: faq
 There are two ways to combat this: do not allow angry people to use the internet or make happy people click *even* more!
 
 We at [spread-the.love](/) do not believe in exclusion therefore we aim to make happy people click more! But not pointless clicking on advertising or captchas to prove ones humanness, no we believe happy people should click to spread their happiness.
+
+<center style="padding-bottom: 30px; padding-top: 30px;">
+🤗<i><b>
+🤗 Spread-the.love aims to spread happiness 🤗
+</b></i>🤗
+</center>
 
 One click and you can make someone else feel good and happy about themselves, the people around them and the planet as a whole. Feel good that you have spread your happiness and have made others feel that happiness.
 
@@ -75,5 +81,3 @@ We at [spread-the.love](/) have removed the *effective*: [spread-the.love](/) is
 
 Yes, you can reach us at [do@you.spread-the.love](mailto:do@you.spread-the.love?subject=contact)
 
-<hr class="mt-5" width="30%"/>
-*Written purely by a human AI (hence the spllng mstakes), no computer AI involved.*
