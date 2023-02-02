@@ -5,7 +5,7 @@ layout: faq
 ---
 
 <div class="row text-center">
-  <div class="offset-5 col-2 text-center">
+  <div class="offset-3 col-6 offset-md-4 col-md-4 text-center">
     <img class="img-fluid" src="/f/logo.svg"/>
   </div>
 </div>
