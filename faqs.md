@@ -58,9 +58,9 @@ We at [spread-the.love](/) believe in [DIY](https://en.wikipedia.org/wiki/Do_it_
 <hr class="mt-5" width="30%"/>
 ### I love the domain, can I get an email alias?
 
-If you donate an amount to above the equivalent of a USD 100, as an acknowledge we will provide you with the opportunity to create an email alias using the domain \<your alias>@spreads-the.love (note: extra 's').
+If you donate an amount above or equivalent to USD 100, as an acknowledge we will provide you with the opportunity to create an email alias with the domain \<your alias>@spreads-the.love (note: extra 's').
 
-Provide a list of possible aliases when you make your donation. Please be aware that your desired alias might have already been taken.
+Provide us a list of your favourite aliases when you place your donation. Please be aware that your desired alias might have already been taken.
 
 Note also we provide no email services other than a one-way email alias, i.e. spread-the.love does not provide an interface for send email using that email alias.
 
@@ -72,7 +72,7 @@ No.
 <hr class="mt-5" width="30%"/>
 ### Is this not just Effective Altruism?
 
-No. We at [spread-the.love](/) have optimised [Effective Altruism](https://en.wikipedia.org/wiki/Effective_altruism). Even though Effective Altruism is all about being efficiency in the application of ones wealth and maximising ones returns on altruist acts, [spread-the.love](/) has optimised this extremely streamlined approach to altruism.
+No. We at [spread-the.love](/) have optimised [Effective Altruism](https://en.wikipedia.org/wiki/Effective_altruism). Even though Effective Altruism is all about being efficient in the application of ones wealth and maximising ones returns on altruist acts, [spread-the.love](/) has optimised this extremely streamlined approach to altruism.
 
 We at [spread-the.love](/) have removed the *effective*: [spread-the.love](/) is *altruism* technology.
 
@@ -80,4 +80,3 @@ We at [spread-the.love](/) have removed the *effective*: [spread-the.love](/) is
 ### Do you have a contact email?
 
 Yes, you can reach us at [do@you.spread-the.love](mailto:do@you.spread-the.love?subject=contact)
-
