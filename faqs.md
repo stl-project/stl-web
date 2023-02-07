@@ -44,7 +44,7 @@ If you wish to send someone specific a positive message, then do it using your d
 <hr class="mt-5" width="30%"/>
 #### Do you send SMS in the middle of the night?
 
-We ensure that people are not awoken from their sleep and send SMS only during *opening hours*. We at [spread-the.love](/) are rather liberal when these hours are and send SMS only between 10am and 3pm local time.
+We ensure that people are not awoken from their sleep and send SMS only during *opening hours*. We at [spread-the.love](/) are rather liberal when these hours are and send SMS only between about 10am and 6pm local time.
 
 <hr class="mt-5" width="30%"/>
 ### How do you fund this?

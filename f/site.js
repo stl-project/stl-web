@@ -181,33 +181,122 @@ var nearlyAllCountries = {
   "UnitedKingdom": "United Kingdom",
   "UnitedStates": "United States"
 };
+function countryCode2Country(countryCode) {
+  switch(countryCode) {
+    case "CA": return "Canada";
+    case "NZ": return "NewZealand";
+    case "RU": return "RussianFederation";
+    case "US": return "UnitedStates";
+    case "UK": return "UnitedKingdom";
+    default: return countryCode;
+  }
+}
 
 var mobileFriendlyCountries = ["AE","AF","Angola","Argentina","AT","Australia","Azerbaijan","BF","BG","BM","BN","BO","BR","BW","BY","Canada","CD","CF","CG","Chile","China","CI","CM","CO","CZ","DE","Denmark","DZ","EC","EG","ER","ES","ET","FI","France","GA","GE","GH","GL","GN","Greece","HR","HU","IN","Indonesia","IQ","IR","IS","Italy","Japan","JO","KE","KG","KH","KP","KR","KZ","LA","LK","LR","LT","LV","LY","MA","Malaysia","MF","MG","MH","MK","ML","MM","MN","MR","MS","MV","MW","MX","MZ","NA","NE","NewZealand","NG","Norway","NP","Oman","PapuaNewGuinea","PE","Philippines","PK","PL","PT","PY","RO","RS","RussianFederation","SA","SD","SE","SK","SN","SO","SS","SX","SY","SZ","TD","TH","TJ","TL","TM","TN","Tonga","Turkey","TV","TZ","UA","UG","UnitedKingdom","UnitedStates","UY","UZ","VE","VN","YE","ZA","ZM","ZW"];
 
-var hiCountry = undefined
+/** latest highlighted country */
+var hiCountry = undefined;
 
-function highlightCountry() {
+/** result from backend */
+let sendSmsViaBackendFinished = false;
+let sendSmsViaBackendCountry = undefined;
+
+/** call backend and handle its response */
+function sendSmsViaBackend(elem) {
+  const accessToken = "0ba5dc7a215b79ca";
+  const sendSmsFromWebUrl = "https://love1-3462.twil.io/api/v1/send-sms-from-web?access_token="+accessToken;
+
+  sendSmsViaBackendFinished = false;
+  sendSmsViaBackendCountry = undefined;
+
+  $.post( sendSmsFromWebUrl, function(data, status, xhr) {
+    // success
+    console.log("Success: " + JSON.stringify(data));
+    try {
+      sendSmsViaBackendCountry = countryCode2Country(data.countryCode);
+      sendSmsViaBackendFinished = true;
+      console.log(`Response from backend: sendSmsViaBackendCountry=${sendSmsViaBackendCountry}`);
+    } catch (error) {
+      console.log(error);
+    }
+  }, 'json')
+  .fail(function(xhr, status, error) {
+    // error
+    console.log("Error:" + JSON.stringify(xhr));
+    let errorMsg = "";
+    try {
+      sendSmsViaBackendFinished = true;
+      if (xhr && xhr.responseText) {
+        let data = JSON.parse(xhr.responseText);
+        if (data) {
+          if (data.title) {
+            errorMsg += "<b>"+data.title+"</b>";
+          }
+          if (data.detail) {
+            errorMsg += " - "+ data.detail+" ";
+          }
+        }
+      }
+    } catch (error) {
+      errorMsg += " + Client error: " + error;
+    }
+    console.log(`Error response from backend: ${errorMsg}`);
+
+    $('#map-overlay').fadeOut(500, () => {
+        $(elem).html("The <img id='pulsing-heart' style='height: 25px;' src='/f/logo-no-bg.svg'/> couldn't been Spread! "+errorMsg);
+    });
+  })
+  .always(function() {
+    // finished
+    sendSmsViaBackendFinished = true;
+  });
+}
+
+/** Highlight the specified country, or a random country if undefined */
+function highlightCountry(highlightCountryValue) {
   if ( hiCountry != undefined ) {
     $('#world-map svg').find('.'+hiCountry).css({'fill': origFill });
   }
 
-  hiCountry = mobileFriendlyCountries[
-    Math.floor( Math.random() * mobileFriendlyCountries.length)
-  ];
+  if (highlightCountryValue) {
+    hiCountry = highlightCountryValue;
+  } else {
+    hiCountry = mobileFriendlyCountries[
+      Math.floor( Math.random() * mobileFriendlyCountries.length)
+    ];
+  }
 
   $('#world-map svg').find('.'+hiCountry).css({'fill': highFill});
 }
 
-function doCountryHighlight(cnt,cb) {
-  if ( cnt == 0 ) {
-    cb()
+// loop `count` times, and forward every `delayMills` milliseconds
+function doCountryHighlight(count, delayMills, cb) {
+  // interrupt loop if backend responded with an error
+  if (sendSmsViaBackendFinished && !sendSmsViaBackendCountry) {
+    // interrupt loop now
+    return;
+  }
+  // normal action
+  if ( count == 0 ) {
+    // select the actual country
+    highlightCountry(sendSmsViaBackendCountry);
+    // final UI effects
+    cb();
   } else {
+    // select a random country
     highlightCountry();
-    setTimeout( () => { doCountryHighlight(cnt-1,cb) }, 200);
+    // repeat
+    if (sendSmsViaBackendCountry) {
+      // backend response received: speed up
+      delayMills = Math.round(delayMills * 0.97);
+    }
+    setTimeout( () => { doCountryHighlight(count-1, delayMills, cb) }, delayMills);
   }
 }
 
 function doIt(elem) {
+  sendSmsViaBackend(elem);
+
   $(elem).html("<img src='/f/loader.svg'/>");
   $(elem).removeAttr('href');
   $(elem).addClass('disabled');
@@ -217,7 +306,7 @@ function doIt(elem) {
   $('#world-map svg').find('path').css({'fill': origFill });
 
   $('#map-overlay').fadeIn(300, () => {
-    doCountryHighlight(20, () => {
+    doCountryHighlight(/*count=*/20*10, /*delayMills=*/200, () => {
 
       $('#dest-country').fadeOut( 200, () => {
         if ( hiCountry in nearlyAllCountries ) {
