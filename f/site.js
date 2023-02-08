@@ -198,8 +198,8 @@ var mobileFriendlyCountries = ["AE","AF","Angola","Argentina","AT","Australia","
 var hiCountry = undefined;
 
 /** result from backend */
-let sendSmsViaBackendFinished = false;
-let sendSmsViaBackendCountry = undefined;
+var sendSmsViaBackendFinished = false;
+var sendSmsViaBackendCountry = undefined;
 
 /** call backend and handle its response */
 function sendSmsViaBackend(elem) {
@@ -223,11 +223,11 @@ function sendSmsViaBackend(elem) {
   .fail(function(xhr, status, error) {
     // error
     console.log("Error:" + JSON.stringify(xhr));
-    let errorMsg = "";
+    var errorMsg = "";
     try {
       sendSmsViaBackendFinished = true;
       if (xhr && xhr.responseText) {
-        let data = JSON.parse(xhr.responseText);
+        var data = JSON.parse(xhr.responseText);
         if (data) {
           if (data.title) {
             errorMsg += "<b>"+data.title+"</b>";
