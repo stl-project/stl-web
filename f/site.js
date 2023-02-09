@@ -183,6 +183,7 @@ var nearlyAllCountries = {
 };
 function countryCode2Country(countryCode) {
   switch(countryCode) {
+    case "AU": return "Australia";
     case "CA": return "Canada";
     case "NZ": return "NewZealand";
     case "RU": return "RussianFederation";
@@ -288,7 +289,7 @@ function doCountryHighlight(count, delayMills, cb) {
     // repeat
     if (sendSmsViaBackendCountry) {
       // backend response received: speed up
-      delayMills = Math.round(delayMills * 0.97);
+      delayMills = Math.round(delayMills * 0.975);
     }
     setTimeout( () => { doCountryHighlight(count-1, delayMills, cb) }, delayMills);
   }
@@ -306,7 +307,7 @@ function doIt(elem) {
   $('#world-map svg').find('path').css({'fill': origFill });
 
   $('#map-overlay').fadeIn(300, () => {
-    doCountryHighlight(/*count=*/20*10, /*delayMills=*/200, () => {
+    doCountryHighlight(/*count=*/100/*20*/, /*delayMills=*/200, () => {
 
       $('#dest-country').fadeOut( 200, () => {
         if ( hiCountry in nearlyAllCountries ) {
