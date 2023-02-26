@@ -3,7 +3,6 @@ permalink: /
 title: Spread the Love
 layout: default
 redirect_from:
-  - /sms
   - /sms2
   - /sms3
 

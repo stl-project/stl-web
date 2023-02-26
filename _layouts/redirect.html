@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; {{ page.destination_url }}?from={{ page.url }}
+}">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+
+    <link rel="stylesheet" href="/f/style.css?cb={{ "now" | date: "%s" }}">
+    <link rel="stylesheet" href="/f/Poppins/index.css?cb={{ "now" | date: "%s" }}">
+    <link rel="stylesheet" href="/f/bs/css/bootstrap.min.css?cb={{ "now" | date: "%s" }}">
+    <script src="/f/bs/js/bootstrap.min.js?cb={{ "now" | date: "%s" }}"></script>
+    <script src="/f/jquery.3.5.1.js?cb={{ "now" | date: "%s" }}"></script>
+    <script src="/f/site.js?cb={{ "now" | date: "%s" }}"></script>
+  </head>
+
+  <body>
+    <div id="root">
+      <div class="quattro container text-center mt-4 pt-4">
+
+        <div class="row text-center fs-5">
+          <div class="offset-1 col-10 offset-sm-1 col-sm-10 col-xs-12 text-center">
+            Go to ... <a href="{{ page.destination_url }}?from={{ page.url }}">destination page</a>
+          </div>
+        </div>
+
+        <div class="row text-center fixed-bottom fs-6 bg-white">
+          <div class="offset-3 col-6 text-center ">
+            <!-- stats -->
+            <script async src="//static.getclicky.com/101399434.js"></script>
+            <noscript><p><img alt="Stats" width="1" height="1" src="//in.getclicky.com/101399434ns.gif" /></p></noscript>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+  </body>
+</html>
