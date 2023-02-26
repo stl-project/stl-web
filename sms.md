@@ -1,5 +1,5 @@
 ---
-# landing page for stats/analytics: /sms4
+# landing page for stats/analytics
 destination_url: /
 
 layout: redirect
