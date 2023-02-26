@@ -2,10 +2,6 @@
 permalink: /
 title: Spread the Love
 layout: default
-redirect_from:
-  - /sms2
-  - /sms3
-
 ---
 
 <div class="row text-center">

@@ -2,8 +2,8 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; {{ page.destination_url }}?from={{ page.url }}
-}">
+    <!--<meta http-equiv="refresh" content="2; {{ page.destination_url }}?from={{ page.url }}">-->
+    <meta http-equiv="refresh" content="0; {{ page.destination_url }}">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="-1">
 
@@ -21,14 +21,17 @@
 
         <div class="row text-center fs-5">
           <div class="offset-1 col-10 offset-sm-1 col-sm-10 col-xs-12 text-center">
-            Go to ... <a href="{{ page.destination_url }}?from={{ page.url }}">destination page</a>
+            Spread the ...
+            <!--<a href="{{ page.destination_url }}?from={{ page.url }}">destination page</a>-->
+            <a href="{{ page.destination_url }}">Love</a>
           </div>
         </div>
 
         <div class="row text-center fixed-bottom fs-6 bg-white">
           <div class="offset-3 col-6 text-center ">
             <!-- stats -->
-            <script async src="//static.getclicky.com/101399434.js"></script>
+            <!--<script async src="//static.getclicky.com/101399434.js"></script>-->
+            <script src="//static.getclicky.com/101399434.js"></script>
             <noscript><p><img alt="Stats" width="1" height="1" src="//in.getclicky.com/101399434ns.gif" /></p></noscript>
           </div>
         </div>
