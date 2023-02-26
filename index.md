@@ -20,7 +20,7 @@ Making others feel good can make you feel good 🤗
 
 <div class="row mt-4 pt-4 mb-4 pb-4">
 <div class="col">
-<a href="#" type="button" onclick="doIt(this); return false;" class="btn btn-outline-success btn-lg rounded shadow">Spread the <img style="height: 25px;" src="/f/logo-no-bg.svg"/></a>
+<a href="#" type="button" onclick="doIt(this); clicky.log('#spread-the-love-button','Spread-the-Love-button'); return false;" class="btn btn-outline-success btn-lg rounded shadow">Spread the <img style="height: 25px;" src="/f/logo-no-bg.svg"/></a>
 </div>
 </div>
 
