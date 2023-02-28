@@ -1,5 +1,5 @@
 ---
-permalink: /faqs
+permalink: /faqs1
 title: Spread.the.Love - FAQs
 layout: faqNew
 ---

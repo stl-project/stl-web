@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: /index1
 title: Spread the Love
 layout: defaultNew
 ---
