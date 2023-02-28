@@ -6,7 +6,7 @@ layout: default2
 
 <div class="row text-center">
   <div class="offset-3 col-6 text-center">
-    <img class="img-fluid" src="/f/logo.svg"/>
+    <img class="img-fluid" src="/f/logo-white-no-bg.png"/>
   </div>
 </div>
 
