@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ page.title | default: "Spread The Love" }}</title>
+
+    <meta property="og:title" content="" />
+    <meta name="description" content="Spread the Love" />
+    <meta property="og:description" content="Spread the Love" />
+    <link rel="canonical" href="https://spread-the.love" />
+    <meta name="robots" content="index, follow" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="google" content="notranslate" />
+    <meta name="theme-color" content="rgba(0,0,0,0.6)">
+    <meta name="application-name" content="Spred the love" />
+
+    <meta name="generator" content="Jekyll v3.9.0" />
+    <meta property="og:title" content="Spread the Love" />
+    <meta property="og:locale" content="en_AU" />
+    <meta property="og:url" content="https://spread-the.love/"/>
+    <meta property="og:site_name" content="spread-the.love" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:title" content="{{ page.title }}" />
+
+    <link rel="stylesheet" href="/f/Poppins/index.css?cb={{ "now" | date: "%s" }}">
+    <link rel="stylesheet" href="/f/bs/css/bootstrap.min.css?cb={{ "now" | date: "%s" }}">
+    <link rel="stylesheet" href="/f/style.css?cb={{ "now" | date: "%s" }}">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/f/apple-touch-icon.png?cb={{ "now" | date: "%s" }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="/f/favicon-32x32.png?cb={{ "now" | date: "%s" }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="/f/favicon-16x16.png?cb={{ "now" | date: "%s" }}">
+    <link rel="manifest" href="/f/site.webmanifest?cb={{ "now" | date: "%s" }}">
+    <script src="/f/bs/js/bootstrap.min.js?cb={{ "now" | date: "%s" }}"></script>
+    <script src="/f/jquery.3.5.1.js?cb={{ "now" | date: "%s" }}"></script>
+    <script src="/f/site.js?cb={{ "now" | date: "%s" }}"></script>
+  </head>
+
+  <body>
+    <div id="root">
+      <div class="quattro container mt-4 pt-4">
+
+        <div class="row fs-5">
+            {{ content }}
+        </div>
+
+        <div class="row text-center fixed-bottom fs-6 bg-white">
+          <div class="offset-3 col-6 text-center ">
+            Copyright &copy; {{ "now" | date: "%Y" }} STL Non-Profit Association
+            <!-- stats -->
+            <script async src="//static.getclicky.com/101399434.js"></script>
+            <noscript><p><img alt="Stats" width="1" height="1" src="//in.getclicky.com/101399434ns.gif" /></p></noscript>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+  </body>
+</html>
