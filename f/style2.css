@@ -21,9 +21,14 @@ body {
   /*padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;*/
 
+  /* (variant 2) */
   background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%); 
-  /* https://99designs.de/blog/design-kreativitaet/farbkombinationen/ - 29. Rot, Gelb, Blaugrün und helles Violett */
+  /* (variant 3) https://99designs.de/blog/design-kreativitaet/farbkombinationen/ - 29. Rot, Gelb, Blaugrün und helles Violett */
   background: linear-gradient(0deg, #e8d71d 0%, #16acea 100%);
+  /* (variant 4b) https://visme.co/blog/de/farbkombinationen/ - 4 - Sonnenuntergang über einem Sumpf */
+  background: linear-gradient(0deg, #6465a5 0%, #f3e96b 100%);
+  /* (variant 4a) https://visme.co/blog/de/farbkombinationen/ - 4 - Sonnenuntergang über einem Sumpf */
+  background: linear-gradient(0deg, #f28a30 0%, #f3e96b 100%);
 
   background-repeat: no-repeat;
   background-position: center center;
@@ -41,6 +46,8 @@ body {
   color: white;
   /* (variant 3) https://99designs.de/blog/design-kreativitaet/farbkombinationen/ - 29. Rot, Gelb, Blaugrün und helles Violett */
   color: #4203c9;
+  /* (variant 4a) https://visme.co/blog/de/farbkombinationen/ - 4 - Sonnenuntergang über einem Sumpf */
+  color: #6465a5;
 
   background-color: #0b0b0b;
 }
@@ -65,7 +72,11 @@ body {
   /* (variant 2) */
   background: linear-gradient(0deg, #ee0979 0%, #ff6a00 100%);
   /* (variant 3) https://99designs.de/blog/design-kreativitaet/farbkombinationen/ - 29. Rot, Gelb, Blaugrün und helles Violett */
-  background: linear-gradient(0deg, #16acea 0%,  #e8d71d 100%);
+  background: linear-gradient(0deg, #16acea 0%, #e8d71d 100%);
+  /* (variant 4b) https://visme.co/blog/de/farbkombinationen/ - 4 - Sonnenuntergang über einem Sumpf */
+  background: linear-gradient(0deg, #f3e96b 0%, #6465a5 100%);
+  /* (variant 4a) https://visme.co/blog/de/farbkombinationen/ - 4 - Sonnenuntergang über einem Sumpf */
+  background: linear-gradient(0deg, #f3e96b 0%, #f28a30 100%);
 
   /*overflow: hidden;*/
 }

@@ -15,7 +15,12 @@ layout: default2
     <img class="img-fluid" src="/f/logo-white-no-bg.png" />
     -->
     <!-- (variant 3) https://99designs.de/blog/design-kreativitaet/farbkombinationen/ - 29. Rot, Gelb, Blaugrün und helles Violett -->
+    <!-- 
     <img class="img-fluid" src="f/logo-red-d71b3b-no-bg.png" />
+    -->
+    <!-- (variant 4a+b) https://visme.co/blog/de/farbkombinationen/ - 4 - Sonnenuntergang über einem Sumpf -->
+    <img class="img-fluid" src="f/logo-red-f05837-no-bg.png" />
+
 
 
   </div>
