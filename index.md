@@ -31,11 +31,11 @@ Making others feel good can make you feel good 🤗
 
 <div class="row text-center">
   <div class="offset-3 col-6 text-center">
-    <img class="img-fluid z-3 position: absolute !important;" src="/f/logo-no-bg.svg"/>
+    <img class="img-fluid z-3 position: absolute !important;" src="/f/logo-no-bg-d71b3b.svg"/>
   </div>
 </div>
 
-  <div id="world-map" class="img-fluid pt-2" style="position: absolute; top: 40%; left: 0; width: 100%; background-color: #d5dfffcc;">
+  <div id="world-map" class="img-fluid pt-2" style="position: absolute; top: 40%; left: 0; width: 100%; background-color: #16aceacc; XXXbackground-color: #d5dfffcc;">
 
     <div class="row mt-2">
   <div class="col text-center" style="font-size: 65%;">
