@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4f, 2020-05-01)"
+   sodipodi:docname="logo-no-bg-d71b3b.svg"
+   style="-webkit-print-color-adjust: exact;"
+   version="1.1"
+   height="520"
+   width="520"
+   viewBox="0 0 520 520"
+   id="screenshot">
+  <metadata
+     id="metadata942">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs940" />
+  <sodipodi:namedview
+     inkscape:current-layer="shape-e216dc93-9100-11ed-a216-4f6946eaeecd"
+     inkscape:window-maximized="0"
+     inkscape:window-y="0"
+     inkscape:window-x="0"
+     inkscape:cy="260"
+     inkscape:cx="260"
+     inkscape:zoom="0.97692308"
+     showgrid="false"
+     id="namedview938"
+     inkscape:window-height="958"
+     inkscape:window-width="1777"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <g
+     clip-path="url(#frame-clip-e8b00270-9100-11ed-a216-4f6946eaeecd-27b08cb0-9101-11ed-a70d-59074b8d5282)"
+     id="shape-e8b00270-9100-11ed-a216-4f6946eaeecd">
+    <defs
+       id="defs922">
+      <clipPath
+         class="frame-clip"
+         id="frame-clip-e8b00270-9100-11ed-a216-4f6946eaeecd-27b08cb0-9101-11ed-a70d-59074b8d5282">
+        <rect
+           id="rect919"
+           height="520"
+           width="520"
+           y="0"
+           x="0" />
+      </clipPath>
+    </defs>
+    <rect
+       id="rect924"
+       style="fill:#ffffff;fill-opacity:0"
+       class="frame-background"
+       height="520"
+       width="520"
+       y="0"
+       x="0" />
+    <g
+       id="shape-17481c30-9101-11ed-a216-4f6946eaeecd">
+      <g
+         id="shape-ed286b30-9100-11ed-a216-4f6946eaeecd">
+        <rect
+           id="rect926"
+           style="fill:#ffffff;fill-opacity:0"
+           height="520"
+           width="520"
+           y="0"
+           x="0"
+           ry="54"
+           rx="54" />
+      </g>
+      <g
+         height="297mm"
+         version="1.1"
+         width="210mm"
+         xml:space="preserve"
+         id="shape-e216dc90-9100-11ed-a216-4f6946eaeecd"><g
+           id="shape-e216dc91-9100-11ed-a216-4f6946eaeecd"><g
+             id="shape-e216dc92-9100-11ed-a216-4f6946eaeecd"><g
+               id="shape-e216dc93-9100-11ed-a216-4f6946eaeecd"><path
+                 id="path929"
+                 style="fill:#d71b3b;fill-opacity:1;stroke-width:0.264583"
+                 d="M 253.85791,157.67834 C 55.961958,-67.917123 -76.533084,225.22694 241.69803,443.55138 611.65807,218.5906 467.78851,-9.5955441 253.85791,157.67834 Z" /></g></g></g></g>
+    </g>
+  </g>
+</svg>
