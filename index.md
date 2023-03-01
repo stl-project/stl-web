@@ -30,7 +30,7 @@ Making others feel good can make you feel good 🤗
 <div id="map-overlay" class="z-2 container justify-content-center " style="position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%; background-color: #16aceaee; VARIANT1_background-color: #d5dfffee; display: none; ">
 
 <div class="row text-center">
-  <div class="offset-3 col-6 text-center" style="max-width: 700px;">
+  <div class="offset-3 col-6 text-center" style="max-width: 700px; max-height: 40vh;">
     <img class="img-fluid z-3 position: absolute !important;" src="/f/logo-no-bg-d71b3b.svg"/>
   </div>
 </div>
