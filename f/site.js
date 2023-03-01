@@ -1,5 +1,8 @@
 var origFill = "#ececec";
-var highFill = "red";
+
+/*var highFill = "red";*/
+/* (variant 3) https://99designs.de/blog/design-kreativitaet/farbkombinationen/ - 29. Rot, Gelb, Blaugrün und helles Violett */
+var highFill = "#d71b3b";
 
 /*
  * Taken from https://simplemaps.com/resources/svg-world

@@ -20,22 +20,22 @@ Making others feel good can make you feel good 🤗
 
 <div class="row mt-4 pt-4 mb-4 pb-4">
 <div class="col">
-<a href="#" type="button" onclick="doIt(this); clicky.log('#spread-the-love-button','Spread-the-Love-button'); return false;" class="btn btn-outline-success btn-lg rounded shadow">Spread the <img style="height: 25px;" src="/f/logo-no-bg.svg"/></a>
+<a href="#" type="button" onclick="doIt(this); clicky.log('#spread-the-love-button','Spread-the-Love-button'); return false;" class="btn btn-outline-success btn-lg rounded shadow">Spread the <img style="height: 25px;" src="/f/logo-no-bg-d71b3b.svg"/></a>
 </div>
 </div>
 
 [FAQs](/faqs).
 
 
-<div id="map-overlay" class="z-2 container justify-content-center " style="position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%; background-color: #d5dfffee; display: none; ">
+<div id="map-overlay" class="z-2 container justify-content-center " style="position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%; background-color: #16aceaee; VARIANT1_background-color: #d5dfffee; display: none; ">
 
 <div class="row text-center">
-  <div class="offset-3 col-6 text-center">
+  <div class="offset-3 col-6 text-center" style="max-width: 700px;">
     <img class="img-fluid z-3 position: absolute !important;" src="/f/logo-no-bg-d71b3b.svg"/>
   </div>
 </div>
 
-  <div id="world-map" class="img-fluid pt-2" style="position: absolute; top: 40%; left: 0; width: 100%; background-color: #16aceacc; XXXbackground-color: #d5dfffcc;">
+  <div id="world-map" class="img-fluid pt-2" style="position: absolute; top: 40%; left: 0; width: 100%; background-color: #16aceacc; VARIANT1_background-color: #d5dfffcc;">
 
     <div class="row mt-2">
   <div class="col text-center" style="font-size: 65%;">
