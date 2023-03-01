@@ -41,13 +41,13 @@
 
   <body>
     <div id="root">
-      <div class="quattro container {{ page.base_container_optional_classes }} mt-4 pt-4">
+      <div class="quattro container {{ layout.base_container_optional_classes }} mt-4 pt-4">
 
         <div class="row fs-5">
             {{ content }}
         </div>
 
-        <div class="row {{ page.base_row_optional_classes }} fixed-bottom fs-6 bg-white">
+        <div class="row {{ layout.base_row_optional_classes }} fixed-bottom fs-6 bg-white">
           <div class="offset-3 col-6 text-center ">
             Copyright &copy; {{ "now" | date: "%Y" }} STL Non-Profit Association
             <!-- stats -->
