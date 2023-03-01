@@ -17,6 +17,7 @@ layout: default2
     <!-- (variant 3) https://99designs.de/blog/design-kreativitaet/farbkombinationen/ - 29. Rot, Gelb, Blaugrün und helles Violett -->
     <img class="img-fluid" src="f/logo-red-d71b3b-no-bg.png" />
 
+
   </div>
 </div>
 
