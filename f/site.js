@@ -336,14 +336,15 @@ function doIt(elem) {
           clearInterval(intVal);
           $('#map-overlay').fadeOut(500, () => {
             setTimeout( () => {
-              $(elem).html("The <img id='pulsing-heart' style='height: 25px;' src='/f/logo-no-bg.svg'/> has been Spread!");
+              $(elem).html("The <img id='pulsing-heart' style='height: 25px;' src='/f/logo-no-bg-d71b3b.svg'/> has been Spread!");
 
               setTimeout( () => {
                 $('#pulsing-heart').animate({"height": 35}, 800, "swing", () => {
                   $('#pulsing-heart').animate({"height": 25}, 800);
                 });
               }, 200);
-
+              
+              document.getElementById("finalWords").style.display = "block";
             }, 200);
           });
         }, 1600);

@@ -19,11 +19,11 @@ Press the button and send a random person, somewhere in the world, an SMS with a
 Making others feel good can make you feel good 🤗
 
 <div class="row mt-4 pt-4 mb-4 pb-4">
-  <div class="VARIANT1_col offset-4 col-4">
+  <div class="VARIANT1_col offset-1 col-10">
     <a href="#" type="button" onclick="doIt(this); clicky.log('#spread-the-love-button','Spread-the-Love-button'); return false;" class="btn btn-outline-success btn-lg rounded shadow">Spread the <img style="height: 25px;" src="/f/logo-no-bg-d71b3b.svg"/></a>
   </div>
-  <div class="offset-4 col-4" style="display: none;">
-    If you like it tell your friends.
+  <div id="finalWords" class="offset-1 col-10" style="display: none;">
+    If you like it then tell your friends.
   </div>
 </div>
 
@@ -32,12 +32,13 @@ Making others feel good can make you feel good 🤗
 
 <div id="map-overlay" class="z-2 container justify-content-center " style="position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%; background-color: #16aceaee; VARIANT1_background-color: #d5dfffee; display: none; ">
 
+<!--
 <div class="row text-center">
   <div class="offset-3 col-6 text-center" style="max-width: 700px; max-height: 40vh;">
     <img class="img-fluid z-3 position: absolute !important;" src="/f/logo-no-bg-d71b3b.svg"/>
   </div>
 </div>
-
+-->
   <div id="world-map" class="img-fluid pt-2" style="position: absolute; top: 40%; left: 0; width: 100%; background-color: #16aceacc; VARIANT1_background-color: #d5dfffcc;">
 
     <div class="row mt-2">
