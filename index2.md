@@ -6,7 +6,17 @@ layout: default2
 
 <div class="row text-center">
   <div class="offset-3 col-6 text-center">
-    <img class="img-fluid" src="/f/logo-white-no-bg.png"/>
+    <!-- (variant 0) -->
+    <!-- 
+    <img class="img-fluid" src="/f/logo-no-bg.svg" />
+    -->
+    <!-- (variant 2) -->
+    <!-- 
+    <img class="img-fluid" src="/f/logo-white-no-bg.png" />
+    -->
+    <!-- (variant 3) https://99designs.de/blog/design-kreativitaet/farbkombinationen/ - 29. Rot, Gelb, Blaugrün und helles Violett -->
+    <img class="img-fluid" src="f/logo-red-d71b3b-no-bg.png" />
+
   </div>
 </div>
 
