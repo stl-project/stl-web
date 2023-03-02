@@ -22,8 +22,8 @@ Making others feel good can make you feel good 🤗
   <div class="VARIANT1_col offset-1 col-10">
     <a href="#" type="button" onclick="doIt(this); clicky.log('#spread-the-love-button','Spread-the-Love-button'); return false;" class="btn btn-outline-success btn-lg rounded shadow">Spread the <img style="height: 25px;" src="/f/logo-no-bg-d71b3b.svg"/></a>
   </div>
-  <div id="finalWords" class="offset-1 col-10" style="display: none;">
-    If you like it then tell your friends.
+  <div id="finalWords" class="offset-1 col-10 pt-4" style="display: none;">
+    If you liked this, <a href='#' onclick='doShareLink(); return false;'>tell your friends</a>.
   </div>
 </div>
 

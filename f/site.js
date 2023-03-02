@@ -227,6 +227,11 @@ function sendSmsViaBackend(elem) {
   .fail(function(xhr, status, error) {
     // error
     console.log("Error:" + JSON.stringify(xhr));
+    console.log(" DSTD: " + status);
+    if (status == "error" && xhr.status == 0) {
+      $('#finalWords').html("Do you have uBlock/uMatrix installed - something blocked us from <a href='https://spread-the.love'>spread-the.love</a>?").show();
+    }
+
     var errorMsg = "";
     try {
       sendSmsViaBackendFinished = true;
@@ -244,10 +249,13 @@ function sendSmsViaBackend(elem) {
     } catch (error) {
       errorMsg += " + Client error: " + error;
     }
+
+    console.log("Error response from backend: " + errorMsg);
+
     console.log(`Error response from backend: ${errorMsg}`);
 
     $('#map-overlay').fadeOut(500, () => {
-        $(elem).html("The <img id='pulsing-heart' style='height: 25px;' src='/f/logo-no-bg.svg'/> couldn't been Spread! "+errorMsg);
+        $(elem).html("The <img id='pulsing-heart' style='height: 25px;' src='/f/logo-no-bg.svg'/> could not been Spread! "+errorMsg);
     });
   })
   .always(function() {
@@ -343,7 +351,7 @@ function doIt(elem) {
                   $('#pulsing-heart').animate({"height": 25}, 800);
                 });
               }, 200);
-              
+
               document.getElementById("finalWords").style.display = "block";
             }, 200);
           });
@@ -351,4 +359,35 @@ function doIt(elem) {
       }, 300);
     })
   })
+}
+
+
+function copyToClipboard(content) {
+  var tempInput = document.createElement("input");
+  tempInput.style = "position: absolute; left: -1000px; top: -1000px";
+  tempInput.value = content;
+  document.body.appendChild(tempInput);
+
+  tempInput.select();
+  document.execCommand("copy");
+  document.body.removeChild(tempInput);
+}
+
+function doShareLink() {
+  var shareUrl = window.location.href;
+
+  try {
+    navigator.share({
+      title: "spread-the.love",
+      text: "Spread-the.Love Link",
+      url: shareUrl
+    })
+  } catch ( e ) {
+    try {
+      copyToClipboard( shareUrl )
+      alert('Link copied to clipboard')
+    } catch ( e ) {
+      prompt("Current page", shareUrl)
+    }
+  }
 }
